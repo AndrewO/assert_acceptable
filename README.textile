@@ -1,0 +1,9 @@
+Need a way to quickly test a generated image?  assert_acceptable is your answer.
+
+This is extremely alpha and probably doesn't even really work right now (especially if you don't have MacRuby installed).  Due to the dearth of documentation on HotRuby, it's extremely ugly.
+
+h1. TODO
+
+* Allow for difference operating systems aside from OSX
+* Allow for testing acceptance of different resources aside from images
+* Support for RSpec
