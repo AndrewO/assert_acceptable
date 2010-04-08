@@ -1,6 +1,16 @@
-class Test::Unit::TestCase
-  def assert_acceptable(image_path, msg = nil)
-    ret = %x{#{File.dirname(__FILE__) + "/../bin/assert_acceptable"} #{image_path} "#{msg}"}
-    assert_equal(0, ret.to_i, "User did not accept #{image_path}")
+$:.unshift(File.dirname(__FILE__))
+require "assert_acceptable"
+require "assert_acceptable/acceptor"
+
+module AssertAcceptable
+  module TestUnit
+    def assert_acceptable(resource_path, assertion = "look right")
+      acceptor = AssertAcceptable::Acceptor.for_system.new(resource_path, assertion)
+      assert acceptor.acceptable?, "User said that #{resource_path} did not #{assertion}."
+    end
   end
+end
+
+class Test::Unit::TestCase
+  include AssertAcceptable::TestUnit
 end
