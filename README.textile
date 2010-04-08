@@ -2,9 +2,15 @@ Need a way to quickly test a generated image?  Then this is for you.
 
 Right now, it only works out of the box for OS X, although you should be able to get it working by setting the SHOES_PATH environment variable.
 
+h1. Tips
+
+* Enter is the hotkey for yes.
+* Esc is the hotkey for no.
+
 h1. TODO
 
 * Figure out how to pass arguments to Shoes without it trying to run them (so that custom messages can be passed to the GUI).
+* Find out if it's possible to make the Shoes app the active window in a cross-platform way.
 * Make shoes_path smarter so that it doesn't just default to the OS X specific path.
 * Explore other GUI options.
 * Build in some way to defer tests on systems where a GUI might not be available.
