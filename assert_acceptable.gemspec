@@ -11,12 +11,12 @@ Gem::Specification.new do |s|
   s.authors     = ["Andrew O'Brien"]
   s.email       = ["obrien.andrew@gmail.com"]
   s.homepage    = "http://github.com/AndrewO/assert_acceptable"
-  s.summary     = "An assertion that loads a resource into a small gui for the user to load."
-  s.description = ""
+  s.summary     = "An assertion that loads an image into a small Shoes-based gui for the user to load."
+  s.description = "A Test::Unit assertion that opens an image in a Shoes GUI with Yes/No buttons that determine if a test succeeds"
  
   s.required_rubygems_version = ">= 1.3.5"
  
-  s.files        = Dir.glob("{bin,lib}/**/*") + %w(LICENSE README.textile)
+  s.files        = Dir.glob("{bin,lib,test}/**/*") + %w(LICENSE README.textile)
   s.executables  = ['assert_acceptable']
   s.require_path = 'lib'
 end
