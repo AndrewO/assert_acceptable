@@ -6,7 +6,7 @@ require 'version'
  
 Gem::Specification.new do |s|
   s.name        = "assert_acceptable"
-  s.version     = VERSION
+  s.version     = AssertAcceptable::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Andrew O'Brien"]
   s.email       = ["obrien.andrew@gmail.com"]
