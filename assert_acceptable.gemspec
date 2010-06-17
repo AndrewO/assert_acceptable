@@ -17,6 +17,5 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = ">= 1.3.5"
  
   s.files        = Dir.glob("{bin,lib,test}/**/*") + %w(LICENSE README.textile)
-  s.executables  = ['assert_acceptable']
   s.require_path = 'lib'
 end
